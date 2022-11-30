@@ -1,0 +1,7 @@
+{
+    "wheel_name": "adktools",
+    "module_data": [
+        "dbgen_interface_generator.c",
+        "dbgen_interface_generator.h"
+    ]
+}

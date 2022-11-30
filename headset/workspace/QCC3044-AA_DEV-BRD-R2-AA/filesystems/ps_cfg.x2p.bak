@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="ps_cfg" type="list">
+    <configurations>
+        <configuration name="filesystem" options="build|deploy|default">
+            <devkitConfiguration>filesystem</devkitConfiguration>
+            <deployProject>deploy</deployProject>
+            <property name="TYPE">user_ps</property>
+            <property name="system_label">QCC514X_CONFIG</property>
+            <property name="CHIP_TYPE">qcc514x_qcc304x</property>
+            <target>device</target>
+        </configuration>
+    </configurations>
+    <file path="aanc_parameters.htf"/>
+    <file path="aec_reference_config.htf"/>
+    <file path="anc_tuning_config.htf"/>
+    <file path="cvc_config.htf"/>
+    <file path="fbc_config.htf"/>
+    <file path="music_processing_config.htf"/>
+    <file path="subsys7_psflash.htf"/>
+    <file path="va_config.htf"/>
+    <targets>
+        <target name="device"/>
+    </targets>
+</project>

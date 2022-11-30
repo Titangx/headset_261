@@ -1,0 +1,11 @@
+@startuml
+
+    object OPR_USB_AUDIO_RX
+    OPR_USB_AUDIO_RX : id = CAP_ID_USB_AUDIO_RX
+    object EPR_USB_FROM_HOST #lightgreen
+    OPR_USB_AUDIO_RX "IN(0)" <-- EPR_USB_FROM_HOST
+    object EPR_SOURCE_DECODED_PCM #lightblue
+    EPR_SOURCE_DECODED_PCM <-- "OUT_0(0)" OPR_USB_AUDIO_RX
+    object EPR_SOURCE_DECODED_PCM_RIGHT #lightblue
+    EPR_SOURCE_DECODED_PCM_RIGHT <-- "OUT_1(1)" OPR_USB_AUDIO_RX
+@enduml
